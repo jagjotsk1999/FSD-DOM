@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="text-box">
+    <input type="submit" id="btn"></button>
+    <div id="div1">
+        <ul id="ul1"></ul>
+    </div>
+</body>
+<script>
+    var e=document.getElementById('text-box')
+    var b=document.getElementById('btn')
+    var d=document.getElementById('ul1')
+    b.addEventListener('click', append)
+    function append(){
+        var l=document.createElement('li')
+        d.appendChild(l)
+        l.textContent = e.value
+        console.log(l)
+        // document.body.appendChild(d)
+    }
+</script>
+</html>
